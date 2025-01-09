@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css';  // Import Tailwind CSS globally
+import 'tailwindcss/tailwind.css'; 
 import { formatPrice } from "@/utils/helper";
 
 export async function getServerSideProps() {

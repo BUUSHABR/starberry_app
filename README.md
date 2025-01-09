@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+Starberry App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Starberry App is a responsive Next.js application designed to showcase property listings fetched dynamically from an API. The application features a static search result page and a dynamic detail view page, both styled using Tailwind CSS and integrated with various libraries like Formik, Yup, Axios, Fetch, Toast, and Leaflet.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Responsive Pages: Two core pages - a static search result page and a dynamic detail view page.
+Global CSS: Tailwind CSS used for styling, with global CSS managed in styles/globals.css and imported via pages/_app.js.
+Data Fetching: Properties data is fetched from the following API: https://mira-strapi-dev.q.starberry.com/api/properties/?_limit=50
+Form Handling: Built-in Form handling with Formik and Yup for form validation.
+Dynamic Routing: Click on search result opens the dynamic detail view page.
+Localization: Integrated with Leaflet for displaying property locations on a map.
+Authorization: Future-ready for adding authentication if needed.
+Error Handling: Proper handling of API errors and user input validation.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js: For server-side rendering and static site generation.
+Tailwind CSS: For responsive and utility-first styling.
+Formik & Yup: For form validation and handling.
+Axios: For HTTP requests.
+Leaflet: For integrating interactive maps.
+React: Frontend framework.
+Vercel: Deployment platform.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Installation
 
-## Deploy on Vercel
+Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+git clone https://github.com/BUUSHABR/starberry_app.git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Navigate into the project directory:
+cd starberry_app
+
+Install dependencies:
+
+npm install  # or use yarn if preferred
+Usage
+Start the development server:
+npm run dev  # or yarn dev
+
+Access the application locally at: http://localhost:3000
+
+
+Deployment
+The app is deployed on Vercel and can be accessed using: ' https://starberry-8r8uhfv5n-one-days-projects.vercel.app'
+
+Starberry App
+File Structure
+
+starberry_app/
+├── node_modules/
+├── pages/
+│   ├── _app.js
+│   ├── globals.css
+│   ├── index.js (search result page)
+│   └── details.js (dynamic detail view page)
+├── components/
+├── styles/
+│   └── globals.css
+└── ...
+
+Thank You 

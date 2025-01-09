@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css';  // Import Tailwind CSS globally
+import 'tailwindcss/tailwind.css';  
 import LoginForm from "@/components/LoginForm"
 export default function Login() {
   return (
